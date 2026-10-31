@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy | MXF MASTERMIND</title>
+<meta name="description" content="What MXF MASTERMIND reads, where it is kept, and how to disconnect.">
+<style>
+  :root { --bg: #ffffff; --text: #1d1d1f; --muted: #5f5f66; --line: #e3e3e8; --link: #0b57d0; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111114; --text: #ececf1; --muted: #a3a3ad; --line: #2c2c33; --link: #8ab4f8; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 20px; margin: 32px 0 8px; }
+  h3 { font-size: 17px; margin: 20px 0 4px; }
+  .muted { color: var(--muted); }
+  a { color: var(--link); overflow-wrap: anywhere; }
+  ul { padding-left: 22px; }
+  code { font-size: 15px; overflow-wrap: anywhere; }
+  nav { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); }
+  nav a { margin-right: 20px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="muted">MXF MASTERMIND · effective 31 October 2026</p>
+
+  <h2>Who this covers</h2>
+  <p>MXF MASTERMIND is a personal dashboard that runs on one computer and is used by one person: its owner. It only
+  ever connects to its owner's own accounts. Nobody else signs in to it, and it offers no service to anyone else.
+  Contact: <a href="mailto:mxvnns@gmail.com">mxvnns@gmail.com</a>.</p>
+
+  <h2>What each connection reads</h2>
+  <p>Every connection is read only. Nothing is ever posted, uploaded, commented, liked, followed, messaged, sent,
+  deleted or changed on any account.</p>
+
+  <h3>YouTube (Google)</h3>
+  <p>Permissions: <code>youtube.readonly</code>, <code>yt-analytics.readonly</code>,
+  <code>yt-analytics-monetary.readonly</code>. Reads the owner's channel name and subscriber count, daily views and
+  estimated revenue, and the newest videos' titles, dates and view counts. Public comments on the owner's own videos
+  are read with an API key; commenters' names are not kept.</p>
+
+  <h3>Gmail (Google)</h3>
+  <p>Permission: <code>gmail.readonly</code>, nothing else. Searches the owner's mailbox for brand deals, payments and
+  platform notices. For the emails it keeps, it stores the sender, the subject and the date, and Gmail's short
+  preview line only for brand deals, payments and platform notices. It never stores an email's body or attachments.
+  On the owner's click it can summarise one email; that summary is not kept.</p>
+
+  <h3>TikTok</h3>
+  <p>Permissions: <code>user.info.basic</code>, <code>user.info.stats</code>, <code>video.list</code>. Reads the
+  owner's display name, follower, like and video counts, and each video's title, date, link and its view, like,
+  comment and share counts.</p>
+
+  <h3>Instagram</h3>
+  <p>Permissions: <code>instagram_business_basic</code>, <code>instagram_business_manage_insights</code>. Reads the
+  owner's professional account profile, follower count, account views and reach, and each post's and reel's date,
+  caption, link and its views, likes, comments, shares and saves.</p>
+
+  <h3>Facebook</h3>
+  <p>Permissions: <code>pages_show_list</code>, <code>pages_read_engagement</code>, <code>read_insights</code>. Reads
+  the owner's own Facebook Page: its name, followers, views, and each video's and reel's title, date, link and views.
+  It never reads a personal profile, friends or messages.</p>
+
+  <h3>Roblox</h3>
+  <p>Reads public player counts for the owner's games and games the owner follows, and, with the owner's own
+  read-only key, the owner's games' analytics from Roblox (players, Robux earnings).</p>
+
+  <h2>Where it is kept</h2>
+  <ul>
+    <li>Everything it reads is kept in files on the owner's computer. There is no MXF MASTERMIND server and no
+    database anywhere else.</li>
+    <li>Sign-in tokens are encrypted (AES-256-GCM) on that computer and are never sent anywhere except back to the
+    platform that issued them.</li>
+    <li>The dashboard's own data, without sign-in tokens, is backed up daily to the owner's private GitHub
+    repository.</li>
+    <li>Nothing is sold, shared for advertising, or used to profile anyone.</li>
+  </ul>
+
+  <h2>What leaves the computer</h2>
+  <ul>
+    <li><strong>The platforms themselves:</strong> requests to read the data above.</li>
+    <li><strong>Anthropic (Claude API):</strong> the owner's questions to the dashboard's assistant, with the figures
+    needed to answer them; an email the dashboard's own rules cannot sort (the sender's name and domain, the
+    subject and the preview line); and one email the owner asks to summarise. Email addresses, links, phone numbers
+    and codes are removed first.</li>
+    <li><strong>A text-to-speech service:</strong> the assistant's spoken replies, as text.</li>
+    <li><strong>Telegram:</strong> alerts the owner switched on, sent only to the owner's own phone.</li>
+    <li><strong>GitHub:</strong> the owner's private backup.</li>
+  </ul>
+
+  <h2>Google user data</h2>
+  <p>MXF MASTERMIND's use and transfer of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the Limited Use requirements. Data from Google APIs is used only to show the owner their own information
+  in this dashboard. It is not used for advertising, it is not read by people other than the owner, and it is not
+  used or transferred to develop, improve or train generalized artificial intelligence or machine learning models.</p>
+
+  <h2 id="delete">How to disconnect and delete</h2>
+  <ul>
+    <li><strong>In the dashboard:</strong> Settings, Connections, then Disconnect on any platform. This cancels the
+    access at the platform and deletes that platform's sign-in token from the computer. Disconnecting Gmail also
+    deletes every email record it kept.</li>
+    <li><strong>At Google:</strong> <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>,
+    then remove MXF MASTERMIND OS or MXF Mail.</li>
+    <li><strong>At TikTok:</strong> in the app, Settings and privacy, then Security and permissions, then the apps
+    and services that have access, and remove MXF MASTERMIND.</li>
+    <li><strong>At Instagram:</strong> Settings, Website permissions, Apps and websites, then remove MXF MASTERMIND.</li>
+    <li><strong>At Facebook:</strong> Settings and privacy, Settings, Business integrations (or Apps and websites),
+    then remove MXF MASTERMIND.</li>
+    <li><strong>Anything else:</strong> the stored readings live only on the owner's computer and in the owner's
+    private backup, and are deleted by deleting those files. To ask about any of it, write to
+    <a href="mailto:mxvnns@gmail.com">mxvnns@gmail.com</a>.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>MXF MASTERMIND is not directed at children and is not used by anyone but its owner.</p>
+
+  <h2>Changes</h2>
+  <p>This page changes when a connection changes. The date at the top says when it last did.</p>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy policy</a>
+    <a href="terms.html">Terms</a>
+  </nav>
+</main>
+</body>
+</html>
